@@ -74,7 +74,7 @@ switch (TASK) {
         console.log(getOrderStatus(OrderStatus.DELIVERED))
         console.log(getOrderStatus(OrderStatus.CANCELLED))
 
-        console.log(getOrderStatus('Something going wrong'))
+        console.log(getOrderStatus('Upps... Something going wrong :/'))
 
         break
 }
