@@ -38,12 +38,12 @@ switch (TASK) {
     case 3:
 
         enum OrderStatus {
-            PENDING = 'Order awaiting processing',
-            SHIPPED = 'The order has been sent',
-            DELIVERED = 'The order has been delivered',
-            CANCELLED = 'Order cancelled',
+            PENDING = '\n Order awaiting processing ... \n ',
+            SHIPPED = '\n The order has been sent ... \n ',
+            DELIVERED = '\n The order has been delivered ... \n ',
+            CANCELLED = '\n Order cancelled ... \n ',
 
-            UNKNOWN = 'Error: Unknown order status'
+            UNKNOWN = '\n Error: Unknown order status!'
         }
 
         function getOrderStatus(state: OrderStatus | string): string {
@@ -75,7 +75,7 @@ switch (TASK) {
         console.log(getOrderStatus(OrderStatus.CANCELLED))
 
         console.log(getOrderStatus('Something going wrong'))
-        
+
         break
 }
 

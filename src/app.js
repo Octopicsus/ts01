@@ -24,11 +24,11 @@ switch (TASK) {
     case 3:
         let OrderStatus;
         (function (OrderStatus) {
-            OrderStatus["PENDING"] = "Order awaiting processing";
-            OrderStatus["SHIPPED"] = "The order has been sent";
-            OrderStatus["DELIVERED"] = "The order has been delivered";
-            OrderStatus["CANCELLED"] = "Order cancelled";
-            OrderStatus["UNKNOWN"] = "Error: Unknown order status";
+            OrderStatus["PENDING"] = "\n Order awaiting processing ... \n ";
+            OrderStatus["SHIPPED"] = "\n The order has been sent ... \n ";
+            OrderStatus["DELIVERED"] = "\n The order has been delivered ... \n ";
+            OrderStatus["CANCELLED"] = "\n Order cancelled ... \n ";
+            OrderStatus["UNKNOWN"] = "\n Error: Unknown order status!";
         })(OrderStatus || (OrderStatus = {}));
         function getOrderStatus(state) {
             switch (state) {
